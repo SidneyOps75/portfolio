@@ -97,12 +97,12 @@ const activePortfolio = () => {
 }
 
 arrowRight.addEventListener('click', () => {
-    if (index < 4) {
+    if (index < 2) {
         index++;
         arrowLeft.classList.remove('disabled');
     }
     else {
-        index = 5;
+        index = 2;
         arrowRight.classList.add('disabled');
     }
 
@@ -120,4 +120,58 @@ arrowLeft.addEventListener('click', () => {
     }
 
     activePortfolio();
+});
+
+// Initialize EmailJS
+// emailjs.init("w7wPFv_bg9cks5aRG");
+
+// const form = document.getElementById("contact-form");
+// form.addEventListener("submit", function (e) {
+//     e.preventDefault();
+
+//     const formData = {
+//         name: document.getElementById("name").value,
+//         email: document.getElementById("email").value,
+//         phone: document.getElementById("phone").value,
+//         subject: document.getElementById("subject").value,
+//         message: document.getElementById("message").value,
+//     };
+
+//     emailjs.send("service_6zyfyhy", "template_u0djfu9", formData)
+//         .then(function(response) {
+//             console.log("Message sent successfully", response);
+//             alert("Thank you! Your message has been sent.");
+//         })
+//         .catch(function(error) {
+//             console.log("Error sending message", error);
+//             alert("Sorry, something went wrong. Please try again.");
+//         });
+// });
+
+// Initialize EmailJS with your User ID (public key)
+emailjs.init("faQyezRRVDZ7S6bUg"); // Replace with your actual public key
+
+const form = document.getElementById("contact-form");
+form.addEventListener("submit", function (e) {
+    e.preventDefault(); // Prevent default form submission
+
+    // Collect form data
+    const formData = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        phone: document.getElementById("phone").value,
+        subject: document.getElementById("subject").value,
+        message: document.getElementById("message").value,
+    };
+
+    // Send the data using EmailJS
+    emailjs.send("service_6zyfyhy", "template_u0djfu9", formData)
+        .then(function(response) {
+            console.log("Message sent successfully", response);
+            alert("Thank you! Your message has been sent.");
+        })
+        .catch(function(error) {
+            console.log("Error sending message", error);
+            alert("Sorry, something went wrong. Please try again.");
+        });
 });

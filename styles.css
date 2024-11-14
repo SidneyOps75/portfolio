@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
 * {
     margin: 0;
@@ -95,8 +95,8 @@ section {
     display: inline-block;
     color: transparent;
     -webkit-text-stroke: .07rem var(--main-color);
-    animation: display-text 16s linear infinite;
-    animation-delay: calc(-4s * var(--i));
+    animation: display-text 10s linear infinite;
+    animation-delay: calc(-3s * var(--i));
 }
 
 @keyframes display-text {
@@ -113,7 +113,7 @@ section {
     color: var(--main-color);
     white-space :nowrap;
     overflow: hidden;
-    animation: fill-text 4s linear infinite;
+    animation: fill-text 3s linear infinite;
 }
 
 @keyframes fill-text {
@@ -234,7 +234,7 @@ section {
     object-fit: cover;
     mix-blend-mode: lighten;
     border-radius: 50%;
-} */
+}
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
 * {
