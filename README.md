@@ -7,10 +7,7 @@ Welcome to my personal portfolio website! This site showcases my work as a full-
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Live Demo](#live-demo)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contact](#contact)
-- [License](#license)
+
 
 ## Overview
 This portfolio website provides an overview of my skills, recent projects, and services. Built with a responsive design, it aims to provide an engaging experience across all devices.
